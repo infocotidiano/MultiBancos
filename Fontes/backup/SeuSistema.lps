@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="SeuSistema.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="23"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmExemploREDE"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="177"/>
+        <CursorPos X="63" Y="182"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\fpcUpDeluxe\Laz32\config_lazarus\onlinepackagemanager\packages\zeosdbo\src\component\ZConnection.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <CursorPos X="75" Y="79"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="79" Column="24" TopLine="79"/>
+      </Position1>
+      <Position2>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="107" TopLine="97"/>
+      </Position2>
+      <Position3>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="166" TopLine="163"/>
+      </Position3>
+      <Position4>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="162" TopLine="159"/>
+      </Position4>
+      <Position5>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="168" TopLine="192"/>
+      </Position5>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

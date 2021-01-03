@@ -1,0 +1,479 @@
+object frmExemploREDE: TfrmExemploREDE
+  Left = 350
+  Height = 599
+  Top = 250
+  Width = 1084
+  Caption = 'Exemplo Sistema REDE'
+  ClientHeight = 599
+  ClientWidth = 1084
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object pnpConexao: TPanel
+    Left = 0
+    Height = 599
+    Top = 0
+    Width = 242
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 599
+    ClientWidth = 242
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object edtServidor: TEdit
+      Left = 16
+      Height = 30
+      Top = 95
+      Width = 208
+      TabOrder = 0
+    end
+    object edtPORTA: TEdit
+      Left = 16
+      Height = 30
+      Top = 160
+      Width = 104
+      TabOrder = 1
+    end
+    object edtUSUARIO: TEdit
+      Left = 16
+      Height = 30
+      Top = 224
+      Width = 208
+      TabOrder = 2
+    end
+    object edtSENHA: TEdit
+      Left = 16
+      Height = 30
+      Top = 288
+      Width = 208
+      TabOrder = 3
+    end
+    object Label1: TLabel
+      Left = 15
+      Height = 22
+      Top = 71
+      Width = 71
+      Caption = 'Servidor'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 22
+      Top = 135
+      Width = 45
+      Caption = 'Porta'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 16
+      Height = 22
+      Top = 198
+      Width = 64
+      Caption = 'Usuário'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 15
+      Height = 22
+      Top = 262
+      Width = 54
+      Caption = 'Senha'
+      ParentColor = False
+    end
+    object btnConectar: TButton
+      Left = 48
+      Height = 41
+      Top = 480
+      Width = 142
+      Caption = 'Conectar'
+      OnClick = btnConectarClick
+      TabOrder = 4
+    end
+    object btnGravaINI: TButton
+      Left = 133
+      Height = 45
+      Top = 544
+      Width = 91
+      Caption = 'Grava INI'
+      OnClick = btnGravaINIClick
+      TabOrder = 5
+    end
+    object btnLerINI: TButton
+      Left = 8
+      Height = 45
+      Top = 544
+      Width = 91
+      Caption = 'Ler INI'
+      OnClick = btnLerINIClick
+      TabOrder = 6
+    end
+    object Panel1: TPanel
+      Left = 0
+      Height = 52
+      Top = 0
+      Width = 242
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'Conexão'
+      Color = 8453888
+      ParentColor = False
+      TabOrder = 7
+    end
+    object rgBANCO: TRxRadioGroup
+      Left = 16
+      Height = 105
+      Top = 334
+      Width = 208
+      AutoFill = True
+      Caption = 'Banco de Dados'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 78
+      ClientWidth = 204
+      ItemIndex = 0
+      Items.Strings = (
+        'MariaDB'
+        'PostgreSQL'
+      )
+      OnChangeBounds = rgBANCOChangeBounds
+      OnClick = rgBANCOClick
+      TabOrder = 8
+    end
+  end
+  object pnpPrincipal: TPanel
+    Left = 242
+    Height = 599
+    Top = 0
+    Width = 842
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 599
+    ClientWidth = 842
+    TabOrder = 1
+    object pnptop: TPanel
+      Left = 0
+      Height = 151
+      Top = 0
+      Width = 842
+      Align = alTop
+      BevelOuter = bvNone
+      ClientHeight = 151
+      ClientWidth = 842
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -24
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 0
+      object pnlTITULO: TPanel
+        Left = 0
+        Height = 52
+        Top = 0
+        Width = 842
+        Align = alTop
+        BevelOuter = bvNone
+        Caption = 'Exemplo: Infocotidiano'
+        Color = clLime
+        ParentColor = False
+        TabOrder = 0
+      end
+      object edtNOME: TEdit
+        Left = 25
+        Height = 40
+        Top = 103
+        Width = 280
+        TabOrder = 1
+      end
+      object edtFONE: TEdit
+        Left = 312
+        Height = 40
+        Top = 102
+        Width = 176
+        TabOrder = 2
+      end
+      object Button1: TButton
+        Left = 496
+        Height = 43
+        Top = 99
+        Width = 163
+        Caption = 'Incluir'
+        OnClick = Button1Click
+        TabOrder = 3
+      end
+      object Label5: TLabel
+        Left = 24
+        Height = 32
+        Top = 72
+        Width = 66
+        Caption = 'Nome'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 313
+        Height = 32
+        Top = 72
+        Width = 92
+        Caption = 'Telefone'
+        ParentColor = False
+      end
+    end
+    object RxDBGrid1: TRxDBGrid
+      Left = 0
+      Height = 448
+      Top = 151
+      Width = 842
+      ColumnDefValues.BlobText = '(blob)'
+      TitleButtons = False
+      AutoSort = True
+      Columns = <      
+        item
+          ReadOnly = True
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'codigo'
+          Width = 150
+          FieldName = 'codigo'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'nome'
+          Width = 350
+          FieldName = 'nome'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end      
+        item
+          Title.Alignment = taCenter
+          Title.Orientation = toHorizontal
+          Title.Caption = 'telefone'
+          Width = 200
+          FieldName = 'telefone'
+          EditButtons = <>
+          Filter.DropDownRows = 0
+          Filter.EmptyValue = '(Empty)'
+          Filter.NotEmptyValue = '(Not empty)'
+          Filter.AllValue = '(All values)'
+          Filter.EmptyFont.Style = [fsItalic]
+          Filter.ItemIndex = -1
+          Footers = <>
+        end>
+      KeyStrokes = <      
+        item
+          Command = rxgcShowFindDlg
+          ShortCut = 16454
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowColumnsDlg
+          ShortCut = 16471
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowFilterDlg
+          ShortCut = 16468
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowSortDlg
+          ShortCut = 16467
+          Enabled = True
+        end      
+        item
+          Command = rxgcShowQuickFilter
+          ShortCut = 16465
+          Enabled = True
+        end      
+        item
+          Command = rxgcHideQuickFilter
+          ShortCut = 16456
+          Enabled = True
+        end      
+        item
+          Command = rxgcSelectAll
+          ShortCut = 16449
+          Enabled = True
+        end      
+        item
+          Command = rxgcDeSelectAll
+          ShortCut = 16429
+          Enabled = True
+        end      
+        item
+          Command = rxgcInvertSelection
+          ShortCut = 16426
+          Enabled = True
+        end      
+        item
+          Command = rxgcOptimizeColumnsWidth
+          ShortCut = 16427
+          Enabled = True
+        end      
+        item
+          Command = rxgcCopyCellValue
+          ShortCut = 16451
+          Enabled = True
+        end>
+      FooterOptions.DrawFullLine = False
+      SearchOptions.QuickSearchOptions = [loCaseInsensitive, loPartialKey]
+      SearchOptions.FromStart = False
+      OptionsRx = [rdgAllowColumnsForm, rdgAllowDialogFind, rdgAllowQuickFilter]
+      Align = alClient
+      Color = clWindow
+      DrawFullLine = False
+      FocusColor = clRed
+      SelectedColor = clHighlight
+      GridLineStyle = psSolid
+      DataSource = DataSource1
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -21
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Catalog = 'incofotidiano'
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    AfterConnect = ZConnection1AfterConnect
+    Port = 3306
+    Database = 'infocotidiano'
+    User = 'root'
+    Password = 'Info@3004'
+    Protocol = 'postgresql'
+    LibraryLocation = 'C:\Projetos\SistemaRede\libmariadb.dll'
+    Left = 848
+    Top = 256
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    UpdateObject = ZUpdateSQL1
+    CachedUpdates = True
+    AfterEdit = ZQuery1AfterEdit
+    AfterPost = ZQuery1AfterPost
+    AfterDelete = ZQuery1AfterDelete
+    SQL.Strings = (
+      'select * from cliente'
+    )
+    Params = <>
+    FetchRow = 1
+    Left = 776
+    Top = 264
+    object ZQuery1codigo: TLongintField
+      FieldKind = fkData
+      FieldName = 'codigo'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQuery1nome: TStringField
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 100
+    end
+    object ZQuery1telefone: TStringField
+      FieldKind = fkData
+      FieldName = 'telefone'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 944
+    Top = 288
+  end
+  object ZUpdateSQL1: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM cliente'
+      'WHERE'
+      '  cliente.codigo = :OLD_codigo'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO cliente'
+      '  (codigo, nome, telefone)'
+      'VALUES'
+      '  (:codigo, :nome, :telefone)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE cliente SET'
+      '  codigo = :codigo,'
+      '  nome = :nome,'
+      '  telefone = :telefone'
+      'WHERE'
+      '  cliente.codigo = :OLD_codigo'
+    )
+    UseSequenceFieldForRefreshSQL = True
+    Left = 856
+    Top = 312
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'codigo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'nome'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'telefone'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_codigo'
+        ParamType = ptUnknown
+      end>
+  end
+end
