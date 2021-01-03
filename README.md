@@ -1,3 +1,4 @@
+<<<<<<< refs/remotes/origin/main
 # Lazarus - Multi Bancos
 ## PROGRAMA: Teste de Conexão MariaDB e PostgreSQL
 
@@ -14,3 +15,7 @@ Dll dentro da pasta do Programa.
 Bancos utilizados MariaDB 10.5 e PostgreSQL 13.1
 
 ### Link para o meu video: (https://youtu.be/AxQcr4GyfyI)
+=======
+# MultiBancos
+# MultiBancos
+>>>>>>> atualização
