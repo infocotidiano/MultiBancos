@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< refs/remotes/origin/main
 # Lazarus - Multi Bancos
 ## PROGRAMA: Teste de Conexão MariaDB e PostgreSQL
@@ -19,3 +20,7 @@ Bancos utilizados MariaDB 10.5 e PostgreSQL 13.1
 # MultiBancos
 # MultiBancos
 >>>>>>> atualização
+=======
+#PRIMEIRA VERSAO
+DANIEL
+>>>>>>> Stashed changes
