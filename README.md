@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
-<<<<<<< refs/remotes/origin/main
-# Lazarus - Multi Bancos
+# Lazarus (funciona em Delphi) - Multi Bancos
 ## PROGRAMA: Teste de Conexão MariaDB e PostgreSQL
 
 ![Daniel de Morais - Infocotidiano](./tela.PNG)
